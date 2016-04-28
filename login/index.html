@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Common Login</title>
+    <script src="js/angular.js" type="text/javascript"></script>
+    <script src="js/angular-animate.min.js" type="text/javascript"></script>
+    <script src="js/angular-base64.min.js" type="text/javascript"></script>
+    <script src="js/toaster.js" type="text/javascript"></script>
+    <script src="js/auth.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/toaster.css">
+
+</head>
+
+<body ng-app="commonAuthApp" ng-controller="AuthCtrl">
+
+<div id="login-background">
+    <div class="login">
+        <div class="card-container manual-flip" ng-class="isLoggedin ? 'hover' : ''">
+            <div class="card">
+                <div class="front well">
+                    <div class="row">
+                        <div class="title">Shopping Cart <small>Admin Login</small></div>
+                        <div class="title-logo">
+                            <!--<i class="ebIcon ebIcon_eLogo"></i>-->
+                            <img src="img/ericsson/login/econ01.svg" class="pull-right">
+                        </div>
+                    </div>
+                    <form role="form" name="loginData">
+                        <div class="form-item">
+                            <label for="username">User Name</label>
+                            <input type="text" class="form-control" ng-model="user.userName" id="username">
+                        </div>
+                        <div class="form-item">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" ng-model="user.password" id="password">
+                        </div>
+                        <button type="submit" class="ebBtn ebBtn_color_blue btn-info pull-right" ng-click="onLoginBtnClick()">Login</button>
+
+                    </form>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+</div>
+
+<toaster-container toaster-options="{'position-class': 'toast-bottom-right', 'progress-bar':true, 'prevent-duplicates': true}" ></toaster-container>
+</body>
+</html>

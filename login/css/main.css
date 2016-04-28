@@ -1,0 +1,441 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding: 0;
+}
+.title-logo img.pull-right {
+    width: 50px;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+/* entire container, keeps perspective */
+.card-container {
+  perspective: 800px;
+  margin-bottom: 30px;
+}
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card {
+  transform: rotateY(180deg);
+}
+/*.card-container.static:hover .card,*/
+/*.card-container.static.hover .card {*/
+/*transform: none;*/
+/*}*/
+
+/* flip speed goes here */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+.well {
+  margin: 0 auto;
+  padding: 35px;
+  height: 360px;
+  /*border: 10px solid gainsboro;*/
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.card-container, .front, .back {
+  /* width: 100%; */
+  /*height: 420px;*/
+}
+/*       Fix bug for IE      */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .front,
+  .back {
+    -ms-backface-visibility: visible;
+    backface-visibility: visible;
+  }
+  .front {
+    z-index: 3;
+  }
+  .back {
+    z-index: 4;
+    visibility: hidden;
+    -ms-transition: all 0.5s cubic-bezier(0.92, 0.01, 0.83, 0.67);
+  }
+  .card {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  .card-container.hover .front {
+    visibility: hidden;
+  }
+  .card-container.hover .back {
+    z-index: 5;
+    visibility: visible;
+  }
+}
+
+.appIcons {
+  overflow: auto;
+  height: 200px;
+  padding: 0 10px 0 0;
+  margin-right: -15px;
+  margin-bottom: 10px;
+}
+.appIcons-list{
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 15px;
+  background: #ffffff;
+  /*padding: 5px;*/
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  height: 55px;
+  position: relative;
+}
+.appIcons-list .icon {
+  background: #ececec;
+  border-left: 4px solid #999;
+  /*width: 60px;*/
+  float: left;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 3px 3px 3px 5px;
+}
+.appIcons-list .icon-hover {
+  background-color: rgba(0, 169, 212, 0.2);
+  border-left-color: #00a9d4;
+}
+.appIcons-list .icon img{
+  width: 45px;
+}
+.appIcons-list .icon-name {
+  /*float: left;*/
+  /*color: #333;*/
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  left: 65px;
+  top: 7px;
+  display: table;
+  /*min-height: 25px;*/
+  /*position: relative;*/
+  /*top: 50%;*/
+  /*left: 10px;*/
+  /*transform: translateY(50%);*/
+  font-size: 1.2rem;
+}
+.appIcons-list .icon-name span {
+  display: table-cell;
+  vertical-align: middle;
+}
+.appIcons-list .icon-name a {
+  color: #333;
+}
+.appIcons-list:hover {
+  color: #00a9d4;
+  cursor: pointer;
+}
+
+/***** ericsson style ***/
+.ebBtn {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  color: #333333;
+  background-color: #ffffff;
+  border: none;
+  min-width: 60px;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 8px;
+  line-height: 2.4rem;
+  height: 2.4rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  /* W3C */
+}
+.ebBtn > * {
+  vertical-align: middle;
+}
+.ebBtn:hover {
+  text-decoration: none;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+  /* W3C */
+}
+.ebBtn:active {
+  text-decoration: none;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+}
+.ebBtn_color_blue {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C */
+  color: #F0F0F0;
+  background-color: #0966b3;
+}
+.ebBtn_color_blue:hover {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 100%);
+  /* W3C */
+}
+.ebBtn_color_blue:active {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
+  /* W3C */
+}
+
+.eb_scrollbar {
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+.eb_scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.eb_scrollbar::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border: 1px solid transparent;
+  background-clip: content-box;
+  border-radius: 10px;
+}
+.eb_scrollbar::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+.eb_scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #999999;
+}
+.eb_scrollbar::-webkit-scrollbar-button {
+  width: 8px;
+  height: 12px;
+  background-repeat: no-repeat;
+}
+.eb_scrollbar::-webkit-scrollbar-button:vertical:decrement {
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='8px' height='5px' viewBox='0 0 8 5' enable-background='new 0 0 8 5' xml:space='preserve'><path fill='#333333' d='M0.293,3.293l3-3C3.488,0.098,3.744,0,4,0s0.512,0.098,0.707,0.293l3,3c0.391,0.391,0.391,1.023,0,1.414 s-1.023,0.391-1.414,0L4,2.414L1.707,4.707c-0.391,0.391-1.023,0.391-1.414,0S-0.098,3.684,0.293,3.293z'/></svg>");
+}
+.eb_scrollbar::-webkit-scrollbar-button:vertical:increment {
+  background-position: center 3px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='8px' height='5px' viewBox='0 0 8 5' enable-background='new 0 0 8 5' xml:space='preserve'><path fill='#333333' d='M7.707,1.707l-3,3C4.512,4.902,4.255,5,4,5S3.488,4.902,3.292,4.707l-3-3c-0.391-0.391-0.391-1.023,0-1.414 s1.023-0.391,1.414,0L4,2.586l2.293-2.293c0.391-0.391,1.023-0.391,1.414,0S8.098,1.316,7.707,1.707z'/></svg>");
+}
+.eb_scrollbar::-webkit-scrollbar-button:horizontal:decrement {
+  background-position: left center;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='5px' height='8px' viewBox='0 0 5 8' enable-background='new 0 0 5 8' xml:space='preserve'><defs></defs><path fill='#333333' d='M4.707,6.293c0.391,0.391,0.391,1.023,0,1.414C4.512,7.902,4.256,8,4,8S3.488,7.902,3.293,7.707l-3-3 C0.105,4.52,0,4.266,0,4s0.105-0.52,0.293-0.707l3-3c0.391-0.391,1.023-0.391,1.414,0c0.391,0.39,0.391,1.023,0,1.414L2.414,4 L4.707,6.293z'/></svg>");
+}
+.eb_scrollbar::-webkit-scrollbar-button:horizontal:increment {
+  background-position: right center;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='5px' height='8px' viewBox='0 0 5 8' enable-background='new 0 0 5 8' xml:space='preserve'><defs></defs><path fill='#333333' d='M0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0s0.512,0.098,0.707,0.293l3,3 C4.895,3.48,5,3.734,5,4s-0.105,0.52-0.293,0.707l-3,3c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L2.586,4L0.293,1.707z'/></svg>");
+}
+
+
+/******** Login buttons */
+#login-background {
+  background-image: url('../img/login_background.jpg');
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+}
+.login {
+  position: fixed;
+  width: 320px;
+  /*height: 400px;*/
+  /*     right: 0; */
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.login .inner {
+  /*max-width: 260px;*/
+  /*height: 400px;*/
+  margin: 0 auto;
+  padding: 20px 15px 35px 15px;
+  /*border: 10px solid gainsboro;*/
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+.login h1{
+  display: inline;
+}
+.login .identify {
+  margin:0 0 10px 0;
+}
+.login .identify span {
+  cursor: pointer;
+  /*float: right;*/
+  font-weight: bold;
+  color: #00285e;
+}
+.login .inner-container {
+  overflow: hidden;
+  margin-left: 10px;
+}
+.login .logo {
+  background: url("../img/ericsson/login/ericssonLogo_blue.svg") no-repeat;
+  width: 70px;
+  height: 60px;
+  clear: both;
+}
+@font-face {
+  font-family: 'EricssonCapitalTT';
+  src: url('../../font/erricson/branding/EricssonCapitalTT.ttf') format('truetype');
+}
+.login .title {
+  /*clear: both;*/
+    line-height: 15px;
+    font-size: 20px;
+    color: #00285E;
+    text-transform: uppercase;
+    font-family: 'EricssonCapitalTT', serif;
+    margin-bottom: 10px;
+    width: 60%;
+    float: left;
+    margin-left: 15px;
+}
+.login .title-logo {
+  /*width: 30%;*/
+  float: right;
+  margin-right: 15px;
+}
+.login form {
+  /*width: 90%;*/
+  margin: 20px auto;
+  padding: 0;
+}
+.login .form-item {
+  /*margin: 2px;*/
+  display: inline-block;
+  vertical-align: bottom;
+  width: 100%;
+}
+.login label {
+  color: #666666;
+  font-size: 1.1rem;
+}
+.login .form-item {
+  margin-bottom: 15px;
+}
+.login input[type=text], .login input[type=password] {
+  margin-bottom: 0;
+  border: 1px #666666 solid;
+  border-radius: 0;
+}
+.login .form-item.cancel {
+  vertical-align: super;
+}
+.login .btn-submit {
+  background: url("../img/ericsson/login/button-login.png") no-repeat;
+  width: 31px;
+  height: 26px;
+  border: 0;
+}
+.login .footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}

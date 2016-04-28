@@ -1,0 +1,48 @@
+{
+  "name": "shopping_cart",
+  "version": "1.0.0",
+  "description": "Shopping Cart admin portal ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karthickanbujaya/shoppingCart.git"
+  },
+  "keywords": [
+    "shoppingCart"
+  ],
+  "author": "Karthick_Anbujayam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karthickanbujaya/shoppingCart/issues"
+  },
+  "homepage": "https://github.com/karthickanbujaya/shoppingCart#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-animate": "^1.5.5",
+    "angular-base64": "^2.0.5",
+    "angular-bootstrap": "^0.12.2",
+    "angular-dragdrop": "^1.0.13",
+    "angular-mocks": "^1.5.5",
+    "angular-resource": "^1.5.5",
+    "angular-route": "^1.5.5",
+    "angular-translate": "^2.11.0",
+    "angular-translate-loader-static-files": "^2.11.0",
+    "angular-ui-router": "^0.2.18",
+    "angularjs-toaster": "^2.0.0",
+    "bootstrap": "^3.3.6",
+    "d3": "^3.5.16",
+    "datatables": "^1.10.11",
+    "datatables-colreorder": "^1.2.0",
+    "jquery": "^2.2.3",
+    "jquery-ui": "^1.10.5",
+    "lodash": "^4.11.1",
+    "moment": "^2.13.0",
+    "ng-draggable": "^1.0.0",
+    "ngstorage": "^0.3.10",
+    "requirejs": "^2.2.0",
+    "requirejs-domready": "^2.0.3"
+  }
+}
