@@ -10,10 +10,8 @@ define([
 ], function (require, ng) {
     'use strict';
 
-    /*
-     * place operations that need to initialize prior to app start here
-     * using the `run` function on the top-level module
-     */
+    console.log("Bootstrap.js file is loading ");
+
 
     require(['domReady!'], function (document) {
         ng.bootstrap(document, ['app']);

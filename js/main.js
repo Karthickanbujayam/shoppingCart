@@ -6,9 +6,9 @@
 require.config({
 
     paths: {
-        'domReady': '../lib/requirejs-domready/domReady',
-        'angular': '../lib/angular/angular',
-        "uiRouter": "../lib/angular/angular-ui-router"
+        'domReady': '../lib/node_modules/requirejs-domready/domReady',
+        'angular': '../lib/node_modules/angular/angular',
+        "uiRouter": "../lib/node_modules/angular-ui-router/release/angular-ui-router"
     },
 
     /**
@@ -28,4 +28,11 @@ require.config({
         // kick start application... see bootstrap.js
         './bootstrap'
     ]
+});
+
+
+define([], function () {
+    'use strict';
+     console.log("Main.js file is loading ");
+     
 });

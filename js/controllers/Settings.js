@@ -1,6 +1,7 @@
-'use strict';
+define(['./module'], function (controllers) {
 
-define(['controllers'], function(controllers) {
+	'use strict';
+	
     return controllers.controller('SettingsCtrl', ['$scope','$state',
         function($scope, uiColumnStates, $state) {
 

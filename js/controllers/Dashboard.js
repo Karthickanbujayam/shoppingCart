@@ -1,6 +1,7 @@
-'use strict';
+define(['./module'], function (controllers) {
+	
+	'use strict';
 
-define(['controllers'], function(controllers) {
     return controllers.controller('DashboardCtrl', ['$scope','$state',
         function($scope, uiColumnStates, $state) {
 
@@ -9,4 +10,5 @@ define(['controllers'], function(controllers) {
 
 
 	]);
+	
 });

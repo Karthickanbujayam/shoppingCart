@@ -1,11 +1,15 @@
-'use strict';
+ define(['./module'], function(controllers) {
 
-define(['controllers'], function(controllers) {
-    return controllers.controller('CatalogCtrl', ['$scope','uiColumnStates', '$state',
+	 'use strict';
+
+    return controllers.controller('CatalogCtrl', ['$scope','$state',
         function($scope, uiColumnStates, $state) {
 
 			console.log("Catalog.js File is loading....");
 		}
 
 	]);
+	
 });
+
+ 

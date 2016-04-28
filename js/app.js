@@ -10,7 +10,10 @@ define([
     './filters/index',
     './services/index'
 ], function (ng) {
+
     'use strict';
+  
+    console.log("App.js file is loading ");
 
     return ng.module('app', [
         'app.services',

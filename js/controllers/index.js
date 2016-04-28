@@ -6,5 +6,19 @@
  **/
 define([
     './my-ctrl-1',
-    './my-ctrl-2'
+    './my-ctrl-2',
+    './catalog',
+    './dashboard',
+    './data',
+    './design',
+    './extension',
+    './localization',
+    './login',
+    './logs',
+    './messages',
+    './sales',
+    './settings',
+    './system',
+    './user' 
+
 ], function () {});
