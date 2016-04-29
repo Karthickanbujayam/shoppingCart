@@ -3,8 +3,9 @@
  * this should be used for top-level module definitions only
  */
 define([
-    'angular',
+    'angular', 
     'uiRouter',
+    'ngResource',
     './controllers/index',
     './directives/index',
     './filters/index',

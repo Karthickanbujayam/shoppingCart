@@ -8,9 +8,13 @@ define(['./app'], function(app) {
      console.log("Router.js file is loading ");
     return app.config(function($stateProvider, $urlRouterProvider) {
 
-        $stateProvider.state('auth',{
+        $stateProvider.state('/',{
+            url: '/',
+            templateUrl: 'partials/login.html',
+            controller:'LoginCtrl'
+        }).state('auth',{
             url: '/auth',
-            templateUrl: 'login/index.html',
+            templateUrl: 'partials/login.html',
             controller:'LoginCtrl'
         }).state('view1',{
             url: '/view1',

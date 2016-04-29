@@ -8,7 +8,9 @@ require.config({
     paths: {
         'domReady': '../lib/node_modules/requirejs-domready/domReady',
         'angular': '../lib/node_modules/angular/angular',
-        "uiRouter": "../lib/node_modules/angular-ui-router/release/angular-ui-router"
+        "uiRouter": "../lib/node_modules/angular-ui-router/release/angular-ui-router",
+        "angular-resource": "../lib/node_modules/angular-resource/angular-resource",
+        "jQuery": "../lib/node_modules/jquery/dist/jquery"
     },
 
     /**
@@ -17,7 +19,8 @@ require.config({
      */
     shim: {
         'angular': {
-            exports: 'angular'
+            exports: 'angular',
+            deps: ['jQuery']
         },
         'uiRouter':{
             deps: ['angular']
@@ -26,7 +29,8 @@ require.config({
     
     deps: [
         // kick start application... see bootstrap.js
-        './bootstrap'
+        './bootstrap',
+        './config'
     ]
 });
 
