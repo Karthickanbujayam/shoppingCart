@@ -6,10 +6,16 @@ require(['angular'], function(angular) {
     
      console.log("config.js file is loading ");
      
-    configModule.config(['$locationProvider', function($locationProvider) {
-        $locationProvider.html5Mode(true);
-        }]);
-    
+   configModule.config(['$locationProvider', function($locationProvider) {
+
+          $locationProvider.html5Mode({
+                 enabled: true,
+                 requireBase: false
+          });
+
+    }]);
+
+ 
      
     
 });

@@ -5,7 +5,7 @@
 define([
     'angular', 
     'uiRouter',
-    'ngResource',
+    'ngResource', 
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -22,5 +22,6 @@ define([
         'app.filters',
         'app.directives',
         'ui.router'
+        
     ]);
 });

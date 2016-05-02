@@ -6,20 +6,18 @@
 define(['./app'], function(app) {
     'use strict';
      console.log("Router.js file is loading ");
-    return app.config(function($stateProvider, $urlRouterProvider) {
+    return app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+
 
         $stateProvider.state('/',{
-            url: '/',
+            url: '/', 
             templateUrl: 'partials/login.html',
             controller:'LoginCtrl'
-        }).state('auth',{
-            url: '/auth',
-            templateUrl: 'partials/login.html',
-            controller:'LoginCtrl'
-        }).state('view1',{
-            url: '/view1',
-            templateUrl: 'partials/partial1.html',
-            controller:'MyCtrl1'
+            
+        }).state('dashboard',{
+            url: '/dashboard',
+            templateUrl: 'partials/Dashboard.html',
+            controller:'DashboardCtrl'
         })
         .state('view2',{
             url: '/view2',
@@ -28,5 +26,8 @@ define(['./app'], function(app) {
         })
 
         $urlRouterProvider.otherwise("/");
+
+
+          
     })
 });

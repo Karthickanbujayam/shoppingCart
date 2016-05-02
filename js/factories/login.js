@@ -1,15 +1,10 @@
 define(['./module'], function (directives) {
     'use strict';
 
-    factories.factory("User", function($resource) {
+    factories.factory("factory1", function($resource) {
 
-    console.log("Login factory is loading");
-    
-    return $resource("user/:userId.json", {}, {
+    return console.log("Login factory is loading");
 
-		        query: { method: "GET", params: { userId: "users" }, isArray: true }
-		
-		    });
 	});
      
 });
