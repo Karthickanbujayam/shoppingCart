@@ -1,0 +1,63 @@
+[     {
+        "id":"1", 
+        "menuName": "dashboard",
+        "auth": "user"
+         
+    },
+    {
+        "id":"2", 
+        "menuName": "Data",
+        "auth": "user"
+    },
+     
+    {
+        "id":"3", 
+        "menuName": "Catalog",
+        "auth": "user"
+    },
+    {
+        "id":"4", 
+        "menuName": "Design",
+        "auth": "user"
+    },
+    {
+        "id":"5", 
+        "menuName": "Extension",
+        "auth": "user"
+    },
+    {
+        "id":"6",
+        "menuName": "Localization",
+        "auth": "user"
+    },
+    {
+        "id":"7", 
+        "menuName": "Logs",
+        "auth": "user"
+    },
+    {
+        "id":"8", 
+        "menuName": "Messages",
+        "auth": "user"
+    },
+    {
+        "id":"9" ,
+        "menuName": "Sales",
+        "auth": "user"
+    },
+    {
+        "id":"10", 
+        "menuName": "Settings",
+        "auth": "user"
+    },
+    {
+        "id":"11", 
+        "menuName": "System",
+        "auth": "user"
+    },
+    {
+          "id":"12", 
+          "menuName": "User",
+          "auth": "user"
+    }
+]

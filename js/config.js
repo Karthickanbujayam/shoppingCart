@@ -12,6 +12,9 @@ require(['angular'], function(angular) {
                  enabled: true,
                  requireBase: false
           });
+          
+
+
 
     }]);
 

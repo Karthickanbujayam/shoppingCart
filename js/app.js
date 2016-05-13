@@ -7,6 +7,7 @@ define([
     'uiRouter',
     'ngResource', 
     './controllers/index',
+    './factories/index',
     './directives/index',
     './filters/index',
     './services/index'
@@ -19,6 +20,7 @@ define([
     return ng.module('app', [
         'app.services',
         'app.controllers',
+        'app.factories',
         'app.filters',
         'app.directives',
         'ui.router'

@@ -1,0 +1,36 @@
+[
+    {
+        "id":"1" 
+        "username": "Tommy",
+        "password": "123456",
+        "email":"email.mail.com",
+        "tel":"1234567890",
+        "log": {
+            "registration": "2012.12.14",
+            "lastLog": "2013.01.15"
+        }
+    },
+    {
+        "id":"2" 
+        "username": "Anne",
+        "password": "123456",
+        "email":"email.mail.com",
+        "tel":"1234567890",
+        "log": {
+            "registration": "2012.12.24",
+            "lastLog": "2012.12.29"
+        }
+
+    },
+    {
+        "id":"3" 
+        "username": "Miles",
+        "password": "abc",
+        "email":"email.mail.com",
+        "tel":"1234567890",
+        "log": {
+            "registration": "2013.02.01",
+            "lastLog": "2013.02.01"
+        }
+    }
+]
