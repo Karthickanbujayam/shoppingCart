@@ -11,7 +11,9 @@ require.config({
         'uiRouter': '../lib/node_modules/angular-ui-router/release/angular-ui-router',
         'ngResource':'../lib/node_modules/angular-resource/angular-resource',
         'jQuery':'../lib/node_modules/jquery/dist/jquery' ,
-        'domReady': '../lib/node_modules/requirejs-domready/domReady'
+        'domReady': '../lib/node_modules/requirejs-domready/domReady',
+        'angular-cookies':'../lib/node_modules/angular-cookies/angular-cookies',
+        'ngAuth':'../lib/node_modules/ng-auth/dist/ng-auth'
 
     },
 
@@ -29,7 +31,16 @@ require.config({
         },
         'ngResource':{
             deps: ['angular']   
-        } 
+        },
+        'angular-cookies':{
+            deps: ['angular']
+        },
+        'domReady':{
+            exports: 'angular',
+            deps: ['jQuery']
+        },
+        'ngAuth':{
+            deps: ['angular']       }
     },
     
     deps: [

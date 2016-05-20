@@ -1,6 +1,6 @@
 [
     {
-        "id":"1" 
+        "id":"1", 
         "username": "Tommy",
         "password": "123456",
         "email":"email.mail.com",
@@ -11,7 +11,7 @@
         }
     },
     {
-        "id":"2" 
+        "id":"2", 
         "username": "Anne",
         "password": "123456",
         "email":"email.mail.com",
@@ -23,7 +23,7 @@
 
     },
     {
-        "id":"3" 
+        "id":"3", 
         "username": "Miles",
         "password": "abc",
         "email":"email.mail.com",
