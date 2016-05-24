@@ -6,15 +6,10 @@
 define(['./app'], function(app) {
     'use strict';
      console.log("Router.js file is loading ");
-    return app.config(function($stateProvider, $authProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+    return app.config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
             
-            $httpProvider.defaults.useXDomain = true;
-            delete $httpProvider.defaults.headers.common["X-Requested-With"];
-            $httpProvider.defaults.headers.common["Accept"] = "application/json";
-
-        $stateProvider.state('site', {
-                'abstract': true,
-        }).state('/',{
+            
+        $stateProvider.state('/',{
             url: '/',  
             templateUrl: 'partials/login.html',
             controller:'LoginCtrl'

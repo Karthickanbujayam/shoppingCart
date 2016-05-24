@@ -6,8 +6,6 @@ define([
     'angular', 
     'uiRouter',
     'ngResource',
-    'angular-cookies', 
-    'ngAuth',
     './controllers/index',
     './factories/index',
     './directives/index',
@@ -25,9 +23,9 @@ define([
         'app.factories',
         'app.filters',
         'app.directives',
-        'ui.router',
-        'ngCookies',
-        'ng-auth'
+        'ui.router' 
+        
+
         
     ]);
 });

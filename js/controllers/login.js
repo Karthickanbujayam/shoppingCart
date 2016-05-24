@@ -2,38 +2,30 @@ define(['./module'], function (controllers) {
 
 	'use strict';
 
-	return controllers.controller('LoginCtrl', ['$scope','$http','$state','$templateCache','$location','loginFactory',
-		function ($scope, $http, $state,$templateCache, $location,loginFactory) {
+	return controllers.controller('LoginCtrl', ['$scope','$http','$state','$location','loginFactory',
+		function ($scope, $http, $state, $location,loginFactory) {
 			console.log("LoginCtrl File is loading....");
 
-			var loggedin = false;
+		var loggedin = false;
 		//Calling By login Factory method
 		loginFactory.fetch().then(function(data) {
 			$scope.users = data;
-		});
+		}); 
 
-		
 		$scope.LoginUser = function(){ 
 			console.log("LoginUser function has called...."); 
-			
-			
-
 			var totalUsers = $scope.users.length;
-			
-			
 			var usernameTyped = $scope.username;
 			var passwordTyped = $scope.password;
 
 			for( var i=0; i < totalUsers; i++ ) {
-				if( ($scope.users[i].name === usernameTyped) && ($scope.users[i].password === passwordTyped) ) {
+				if( ($scope.users[i].username === usernameTyped) && ($scope.users[i].password === passwordTyped) ) {
 					loggedin = true;
 					console.log("Login Succesfully :" + $scope.users[i].name)
 					break;
 				}
 			}
-
-			
-
+ 
 			if( loggedin === true ) {
 				alert("login successful");
 				$location.path("/dashboard");
