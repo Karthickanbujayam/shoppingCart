@@ -1,63 +1,87 @@
 [     {
         "id":"1", 
-        "menuName": "dashboard",
-        "auth": "user"
+        "menuName": "Dashboard",
+        "auth": "user",
+        "icon":"fa fa-Dashboard",
+        "dropdown":"false"
          
     },
     {
         "id":"2", 
         "menuName": "Data",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-database",
+        "dropdown":"false"
     },
      
     {
         "id":"3", 
         "menuName": "Catalog",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-book",
+        "dropdown":"false"
     },
     {
         "id":"4", 
         "menuName": "Design",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-puzzle-piece",
+        "dropdown":"false"
     },
     {
         "id":"5", 
         "menuName": "Extension",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-external-link",
+        "dropdown":"false"
     },
     {
         "id":"6",
         "menuName": "Localization",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-language",
+        "dropdown":"false"
     },
     {
         "id":"7", 
         "menuName": "Logs",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-terminal",
+        "dropdown":"false"
     },
     {
         "id":"8", 
         "menuName": "Messages",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-comments-o",
+        "dropdown":"false"
     },
     {
         "id":"9" ,
         "menuName": "Sales",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-balance-scale",
+        "dropdown":"false"
     },
     {
         "id":"10", 
         "menuName": "Settings",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-cogs",
+        "dropdown":"false"
     },
     {
         "id":"11", 
         "menuName": "System",
-        "auth": "user"
+        "auth": "user",
+        "icon":"fa fa-laptop",
+        "dropdown":"false"
     },
     {
-          "id":"12", 
-          "menuName": "User",
-          "auth": "user"
+        "id":"12", 
+        "menuName": "User",
+        "auth": "user",
+        "icon":"fa fa-user",
+        "dropdown":"false"
     }
 ]

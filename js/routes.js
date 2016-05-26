@@ -25,7 +25,7 @@ define(['./app'], function(app) {
             controller: 'MyCtrl2'
         })
 
-        $urlRouterProvider.otherwise("/");
+        $urlRouterProvider.otherwise("/dashboard");
 
     })
 });

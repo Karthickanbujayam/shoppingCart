@@ -1,7 +1,15 @@
-<nav ng-controller="MenuCtrl">
+ 
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+	  <ul class="nav nav-sidebar" ng-controller="MenuCtrl">
+		   <li ng-repeat = "list in menus">
+		   		<a ng-href="#/{{list.menuName}}">
+					<i class="{{list.icon | lowercase}}"></i>
+					<span class="ng-binding">{{list.menuName}}</span>
+		   		</a>
+		   	</li>
+	  </ul>
+    </div>
   
-  <ul>
-    <li ng-repeat = "list in menus"><a ng-href="#/{{list.menuName}}">{{list.menuName}}</a></li>
-  </ul>
+ 
 
-</nav>
+

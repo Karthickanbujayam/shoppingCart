@@ -10,7 +10,7 @@ require.config({
         'angular': '../lib/node_modules/angular/angular',
         'uiRouter': '../lib/node_modules/angular-ui-router/release/angular-ui-router',
         'ngResource':'../lib/node_modules/angular-resource/angular-resource',
-        'jQuery':'../lib/node_modules/jquery/dist/jquery' ,
+        'jQuery':'../lib/node_modules/jquery/dist/jquery',
         'domReady': '../lib/node_modules/requirejs-domready/domReady' 
 
     },
@@ -34,7 +34,8 @@ require.config({
             deps: ['angular']
         },
         'domReady':{ 
-            deps: ['angular','jQuery']
+            exports: 'angular',
+            deps: ['jQuery']
         } 
     },
     
