@@ -11,9 +11,14 @@
         "menuName": "Data",
         "auth": "user",
         "icon":"fa fa-database",
-        "dropdown":"false"
+        "dropdown":"true",
+        "subMenu": [
+                        { "menuList":"menu1"},
+                        { "menuList":"menu2"},
+                        { "menuList":"menu2"}             
+                    ]
     },
-     
+   
     {
         "id":"3", 
         "menuName": "Catalog",

@@ -50,11 +50,11 @@ define(['./module'], function (controllers) {
 				"tel": $scope.tel		        						 		 
 			});
 
-			$.ajax( { url: api,
+		$.ajax( { url: api,
 				data: FormData,
 				type: method,
 				contentType: "application/json",
-				success: function(data){
+				success: function(){
 					console.log(data);
 					alert("data");
 				},
@@ -64,6 +64,9 @@ define(['./module'], function (controllers) {
 				}
 			});
 			
+		
+
+		 
 
 		};
 
