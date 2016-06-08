@@ -12,11 +12,11 @@
         "auth": "user",
         "icon":"fa fa-database",
         "dropdown":"true",
-        "subMenu": [
-                        { "menuList":"menu1"},
-                        { "menuList":"menu2"},
-                        { "menuList":"menu2"}             
-                    ]
+        "subMenu": [{
+                        "option1":"menu1",
+                        "option2":"menu2",
+                        "option3":"menu3"
+                   }]
     },
    
     {

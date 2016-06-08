@@ -1,16 +1,36 @@
  
     <div class="collapse navbar-collapse navbar-ex1-collapse">
 	  <ul class="nav nav-sidebar" ng-controller="MenuCtrl">
-		   <li ng-repeat = "list in menus">
+		<span ng-repeat-start="list in menus" ></span>
+		   
+		   <li ng-if="list.dropdown == 'false'">
 		   		<a ng-href="#/{{list.menuName}}">
 					<i class="{{list.icon | lowercase}}"></i>
 					<span class="ng-binding">{{list.menuName}}</span>
 		   		</a>
 		   	</li>
+		   	
+		   	<li ng-if="list.dropdown == 'true'">
+                <a ng-href="javascript:;" data-toggle="collapse" data-target="#demo" class="" aria-expanded="true">
+                <i class="fa fa-fw fa-arrows-v"></i>
+                	Dropdown 
+                <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                    <ul id="demo" class="collapse" aria-expanded="true">
+                   		<span ng-repeat-start="options in list.subMenu" ></span>
+	                        <li ng-repeat="option in options">
+	                            <a href="#">{{option}}</a>
+	                        </li>
+                        <span ng-repeat-end></span>
+
+                    </ul>
+            </li>
+        <span ng-repeat-end></span>
+
 	  </ul>
     </div>
 
- 
+    
     				 
  
 
